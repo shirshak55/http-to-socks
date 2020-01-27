@@ -19,7 +19,7 @@ async fn main() {
     let server_addr = get_env("SERVER_SOADDR")
         .expect("Please provide server address to bind using environment variable")
         .to_socket_addrs()
-        .expect("Unable to parse connect header")
+        .expect("Unable to get socket address")
         .next()
         .expect("No socket address found");
 
