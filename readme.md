@@ -9,7 +9,7 @@ Client <-> Http Proxy <-> Socks Proxy <-> Target Website
 Client connects to http proxy and connects to target website via socks proxy and after getting informations etc forwards it to client.
 
 ```shell
-$ SERVER_SOADDR=0.0.0.0:8100 SOCKS_SOADDR=nyc.socks.ipvanish.com:1080 SOCKS_USERNAME=Ho6M3LOMmjcg SOCKS_PASSWORD=mnA5k4GDQKNI cargo run
+$ SERVER_SOADDR=0.0.0.0:8100 SOCKS_SOADDR=PROXY_ADDR_HERE SOCKS_USERNAME=USERNAMEHERE SOCKS_PASSWORD=PASSWORDHERE cargo run
 ```
 
 Better Optimized version will be released on future. So please don't use it in production or anything else.
